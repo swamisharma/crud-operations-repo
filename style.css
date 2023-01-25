@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    height: 10vh;
+    background-color: aquamarine;
+}
+
+header div{
+    height: 100%;
+}
+
+.logo-img{
+    height: 50%;
+}
+
+.input-search-bar{
+    display: inline-block;
+}
