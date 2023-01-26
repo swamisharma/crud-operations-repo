@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,11 +9,11 @@
     font-weight: 500;
 }
 
-body{
+body {
     background-color: rgba(255, 89, 89, 0.426);
 }
 
-header{
+header {
     display: grid;
     grid-template-columns: 150px 1fr 275px;
     grid-template-rows: 80px;
@@ -23,37 +24,37 @@ header{
     border-bottom: 3px solid black;
 }
 
-header div{
+header div {
     margin: 10px;
     align-self: center;
 }
 
-.logo-img{
+.logo-img {
     width: 100%;
 }
 
-.page-title-heading{
+.page-title-heading {
     text-transform: uppercase;
     font-weight: 700;
     font-size: larger;
 }
 
-.search-div{
+.search-div {
     margin-right: 25px;
 }
 
-.input-search-bar{
+.input-search-bar {
     width: 100%;
     padding: 7px 20px;
     border-radius: 30px;
     border: 1.6px solid black;
 }
 
-.main-div{
+.main-div {
     padding: 100px 0;
 }
 
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr;
     grid-template-rows: 80px;
@@ -64,68 +65,35 @@ footer{
     background-color: rgba(255, 89, 89);
 }
 
-footer div{
+footer div {
     margin: 10px;
     align-self: center;
     text-align: center;
 }
 
-.footer-input{
+.footer-input {
     font-size: medium;
     padding: 10px;
 }
 
-.add-city{
+.add-city {
     width: 80%;
 }
-.add-address{
+
+.add-address {
     width: 60%;
 }
-.add-phone-number{
+
+.add-phone-number {
     width: 115%;
 }
-.add-btn{
+
+.add-btn {
     width: 50%;
 }
 
-@media screen and (max-width: 1250px) {
-    .footer-input{
-        padding: 8px;
-        font-size: medium;
-    }
-    .add-city{
-        width: 85%;
-    }
-    .add-address{
-        width: 85%;
-    }
-    .add-phone-number{
-        width: 115%;
-    }
-    .add-btn{
-        width: 65%;
-    }
-}
-@media screen and (max-width: 550px) {
-    .footer-input{
-        padding: 3px;
-        font-size: small;
-    }
-    .add-city{
-        width: 110%;
-    }
-    .add-address{
-        width: 85%;
-    }
-    .add-phone-number{
-        width: 115%;
-    }
-    .add-btn{
-        width: 65%;
-    }
-}
 
-.main-div li{
+.main-div li {
     padding: 5px 0;
     list-style-type: none;
     display: grid;
@@ -133,30 +101,166 @@ footer div{
     text-align: center;
 }
 
-.main-div li:hover{
+.main-div li:hover {
     color: azure;
-    cursor:default;
+    cursor: default;
 }
 
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.heading-list span{
+.heading-list span {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
 }
 
-li span{
+li span {
     text-transform: capitalize;
 }
 
-.heading-line{
+.heading-line {
     width: 96%;
     margin: 0 auto;
     border: 5px solid black;
     border-radius: 5px;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 850px) {
+    header {
+        grid-template-columns: 125px 1fr 275px;
+        grid-template-rows: 65px;
+    }
+
+    .input-search-bar {
+        padding: 4px 10px;
+    }
+
+    .page-title-heading {
+        font-size: 18px;
+    }
+
+    .main-div {
+        padding: 75px 0;
+    }
+
+    .main-div li {
+        grid-template-columns: 1fr 2fr 1fr 0.85fr 0.85fr;
+        column-gap: 4px;
+    }
+
+    .heading-list span {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    li span {
+        text-transform: capitalize;
+        font-size: 12px;
+    }
+
+    .heading-line {
+        width: 94%;
+        margin: 0 auto;
+        border: 3px solid black;
+        border-radius: 3px;
+    }
+
+    footer {
+        grid-template-rows: 65px;
+    }
+
+    .footer-input {
+        padding: 8px;
+        font-size: medium;
+    }
+
+    .add-city {
+        width: 85%;
+    }
+
+    .add-address {
+        width: 85%;
+    }
+
+    .add-phone-number {
+        width: 115%;
+    }
+
+    .add-btn {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        grid-template-columns: 100px 1fr 225px;
+        grid-template-rows: 50px;
+    }
+
+    .input-search-bar {
+        padding: 4px 10px;
+    }
+
+    .page-title-heading {
+        font-size: 16px;
+    }
+
+    .main-div {
+        padding: 60px 0;
+    }
+
+    .main-div li {
+        grid-template-columns: 1fr 2fr 1fr 0.85fr 0.85fr;
+        column-gap: 4px;
+    }
+
+    .heading-list span {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    li span {
+        text-transform: capitalize;
+        font-size: 10px;
+    }
+
+    .heading-line {
+        width: 94%;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+    footer {
+        grid-template-rows: 50px;
+    }
+
+    .footer-input {
+        padding: 3px;
+        font-size: small;
+    }
+
+    .add-city {
+        width: 110%;
+    }
+
+    .add-address {
+        width: 85%;
+    }
+
+    .add-phone-number {
+        width: 115%;
+    }
+
+    .add-btn {
+        width: 65%;
+    }
 }

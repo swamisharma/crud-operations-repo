@@ -17,8 +17,8 @@ addBtn.addEventListener('click', () => {
     sp5.textContent = "update";
     sp4.setAttribute('class', "material-symbols-outlined delete");
     sp5.setAttribute('class', "material-symbols-outlined update");
-    for (let i = 0; i < 3; i++){
-        if (values[i].value.length == 0){
+    for (let i = 0; i < 3; i++) {
+        if (values[i].value.length == 0) {
             alert("All fields are mandatory");
             return;
         }
@@ -34,14 +34,14 @@ addBtn.addEventListener('click', () => {
 
 list.addEventListener('click', (e) => {
     console.log(e.target);
-    if (e.target.classList[1] == "delete"){
+    if (e.target.classList[1] == "delete") {
         list.removeChild(e.target.parentElement);
     }
 });
 
 list.addEventListener('click', (e) => {
     console.log(e.target);
-    if (e.target.classList[1] == "update"){
+    if (e.target.classList[1] == "update") {
         let spans = e.target.parentElement.innerText.split("\n");
         list.removeChild(e.target.parentElement);
         let values = document.getElementsByClassName("footer-input");
@@ -54,8 +54,8 @@ list.addEventListener('click', (e) => {
 search.addEventListener('keyup', (e) => {
     console.log(e.target.value);
     let searchItems = document.querySelectorAll('li');
-    for (let i = 1; i < searchItems.length; i++){
-        if(searchItems[i].textContent.toUpperCase().indexOf(e.target.value.toUpperCase()) > -1){
+    for (let i = 1; i < searchItems.length; i++) {
+        if (searchItems[i].textContent.toUpperCase().indexOf(e.target.value.toUpperCase()) > -1) {
             console.log(searchItems[i]);
             searchItems[i].style.display = "grid";
         }
